@@ -22,4 +22,4 @@ FROM EnergyMeterData
 GROUP BY DATE(timestamp), meter_id;
 SELECT meter_id, MAX(power) AS peak_power
 FROM EnergyMeterData
-GROUP BY meter_id
+GROUP BY meter_id;
